@@ -12,12 +12,23 @@ use RuntimeException;
  */
 final class Repositorio
 {
+    private static ?self $compartido = null;
+
     /** @var array<string, Catalogo> */
     private array $cargados = [];
 
     public function __construct(
         private readonly string $directorio = __DIR__.'/../resources/catalogos',
     ) {}
+
+    /**
+     * La instancia que comparten Catalogos y los enums, para que cada catálogo
+     * se lea una sola vez por proceso aunque se consulte desde varios lugares.
+     */
+    public static function compartido(): self
+    {
+        return self::$compartido ??= new self;
+    }
 
     /**
      * Los números de catálogo disponibles, en orden: 01, 02, …, 65, D-37.

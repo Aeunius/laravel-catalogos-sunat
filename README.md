@@ -51,6 +51,42 @@ El número de catálogo se acepta con o sin cero a la izquierda (`'6'`, `6`,
 Los códigos siempre son texto en `$item->codigo`. Las claves de `items()` no lo
 garantizan, porque PHP convierte en entero una clave como `"62"`.
 
+### Enums
+
+Los catálogos que más se usan en el código también están como enums, con el
+código de la SUNAT como valor:
+
+```php
+use Aeunius\CatalogosSunat\Enums\Moneda;
+use Aeunius\CatalogosSunat\Enums\TipoAfectacionIgv;
+use Aeunius\CatalogosSunat\Enums\TipoDocumento;
+use Aeunius\CatalogosSunat\Enums\TipoDocumentoIdentidad;
+
+TipoDocumento::Factura->value;                // "01"
+TipoDocumento::from('07');                    // TipoDocumento::NotaCredito
+TipoDocumento::NotaCredito->esNota();         // true
+TipoDocumento::Factura->descripcion();        // "Factura"
+
+TipoDocumentoIdentidad::Ruc->value;           // "6"
+
+TipoAfectacionIgv::GravadoOneroso->esGravado();   // true
+TipoAfectacionIgv::GravadoIvap->tributos();       // ["1016", "9996"]
+
+Moneda::PEN->simbolo();                       // "S/"
+Moneda::PEN->decimales();                     // 2
+```
+
+| Enum | Catálogo |
+|---|---|
+| `TipoDocumento` | 01 Tipo de documento |
+| `Moneda` | 02 Monedas (ISO 4217) |
+| `TipoDocumentoIdentidad` | 06 Tipo de documento de identidad |
+| `TipoAfectacionIgv` | 07 Tipo de afectación del IGV |
+
+La descripción y las propiedades salen del catálogo, no del enum, y un test
+verifica que cada enum tenga exactamente los códigos de su catálogo. Para el
+resto de catálogos, `Catalogos::get()`.
+
 ### Sin Laravel
 
 ```php

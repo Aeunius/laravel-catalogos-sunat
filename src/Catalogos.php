@@ -18,7 +18,7 @@ class Catalogos
 
     public function __construct(?Repositorio $repositorio = null)
     {
-        $this->repositorio = $repositorio ?? new Repositorio;
+        $this->repositorio = $repositorio ?? Repositorio::compartido();
     }
 
     /**
