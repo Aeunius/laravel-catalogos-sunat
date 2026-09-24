@@ -1,0 +1,44 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    name: PHP ${{ matrix.php }} · Laravel ${{ matrix.laravel }}${{ matrix.stability == 'prefer-lowest' && ' · mínimas' || '' }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { php: '8.2', laravel: '12', testbench: '^10.0', stability: prefer-lowest }
+          - { php: '8.2', laravel: '12', testbench: '^10.0', stability: prefer-stable }
+          - { php: '8.5', laravel: '12', testbench: '^10.0', stability: prefer-stable }
+          - { php: '8.3', laravel: '13', testbench: '^11.0', stability: prefer-stable }
+          - { php: '8.5', laravel: '13', testbench: '^11.0', stability: prefer-stable }
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+
+      # Larastan solo lo usa static.yml; se quita para que no suba los mínimos de Laravel.
+      - name: Instalar dependencias
+        run: |
+          composer remove --dev larastan/larastan --no-update --no-interaction
+          composer require "laravel/framework:${{ matrix.laravel }}.*" "orchestra/testbench:${{ matrix.testbench }}" --no-update --no-interaction
+          composer update --${{ matrix.stability }} --prefer-dist --no-interaction --no-progress
+
+      - name: Versiones instaladas
+        run: composer show | grep -E '^(laravel/framework|orchestra/testbench|pestphp/pest|phpunit/phpunit) '
+
+      - run: vendor/bin/pest --ci
