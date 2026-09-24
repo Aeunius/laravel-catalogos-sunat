@@ -231,6 +231,31 @@ $catalogos = new Catalogos;
 $catalogos->descripcion('06', '6');   // "Registro Unico de Contribuyentes"
 ```
 
+## En JavaScript
+
+[`@aeunius/catalogos-sunat`](https://github.com/Aeunius/catalogos-sunat-js) trae
+los mismos catálogos al navegador y a Node, con los mismos datos: el frontend
+llena sus selects con los mismos códigos que valida el backend, sin copiar JSON
+a mano ni pedirlos a la API.
+
+```bash
+npm install @aeunius/catalogos-sunat
+```
+
+```ts
+import { descripcion, opciones } from '@aeunius/catalogos-sunat';
+import monedas from '@aeunius/catalogos-sunat/catalogos/02';
+
+descripcion(monedas, 'PEN'); // "sol peruano"
+opciones(monedas);           // [{ value: 'AED', label: 'dírham …' }, …]
+```
+
+Cada catálogo es un módulo aparte, así que el 25 no entra en una app que solo
+usa monedas. Acepta también el JSON de `Catalogos::get()`, con la misma forma.
+
+Si cambias los datos, publica un tag: el paquete de JavaScript toma sus
+catálogos de un tag de este repositorio y sale con el mismo número de versión.
+
 ## De dónde salen los datos
 
 De los Excel de reglas de validación que la SUNAT publica en su portal CPE, que
