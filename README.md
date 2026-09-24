@@ -7,6 +7,8 @@ tributos, afectación del IGV, tipos de operación, ubigeo, código de producto
 
 - Los 42 catálogos vigentes (01–27 y 51–65) y el listado D-37 de la guía de
   remisión, tomados de las reglas de validación que publica la SUNAT.
+- Los 2.020 códigos de retorno de la SUNAT (excepciones, rechazos y
+  observaciones), clasificados según el manual del programador.
 - Las propiedades adicionales de cada catálogo, tipadas: el símbolo de la
   moneda, el porcentaje de la percepción, los comprobantes que admite cada tipo
   de operación, el nivel de cada cargo o descuento…
@@ -50,6 +52,14 @@ count($catalogo);                     // 22
 
 $globales = $catalogo->items()
     ->filter(fn ($item) => $item->get('nivel') === 'global');
+```
+
+Los códigos con que responde la SUNAT están en `codigos-retorno`, con su tipo:
+
+```php
+$error = Catalogos::buscar('codigos-retorno', $cdr->codigo);
+$error->descripcion;                  // "El documento ya fue presentado anteriormente."
+$error->get('tipo');                  // "observacion": el comprobante quedó aceptado
 ```
 
 El número de catálogo se acepta con o sin cero a la izquierda (`'6'`, `6`,

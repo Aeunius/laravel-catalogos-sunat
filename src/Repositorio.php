@@ -31,7 +31,7 @@ final class Repositorio
     }
 
     /**
-     * Los números de catálogo disponibles, en orden: 01, 02, …, 65, D-37.
+     * Los catálogos disponibles, en orden: 01, 02, …, 65, D-37, codigos-retorno.
      *
      * @return list<string>
      */
@@ -68,13 +68,18 @@ final class Repositorio
     }
 
     /**
-     * "1" y 1 son el catálogo "01"; "d-37" es "D-37".
+     * "1" y 1 son el catálogo "01"; "d-37" es "D-37"; "Codigos-Retorno" es
+     * "codigos-retorno".
      */
     public static function normalizar(string|int $numero): string
     {
-        $numero = strtoupper(trim((string) $numero));
+        $numero = strtolower(trim((string) $numero));
 
-        return ctype_digit($numero) ? str_pad($numero, 2, '0', STR_PAD_LEFT) : $numero;
+        return match (true) {
+            ctype_digit($numero) => str_pad($numero, 2, '0', STR_PAD_LEFT),
+            (bool) preg_match('/^d-\d+$/', $numero) => strtoupper($numero),
+            default => $numero,
+        };
     }
 
     private function leer(string $numero): Catalogo

@@ -57,6 +57,24 @@ Descargas:
   | 63, 64 | Ubigeo | `ubigeo` |
   | D-37 | Abreviatura | `abreviatura` |
 
+### Códigos de retorno
+
+`codigos-retorno.json` sale de la hoja **CódigosRetorno** de los mismos dos
+Excel: los códigos con que responde la SUNAT al recibir un comprobante. Cada uno
+lleva en `tipo` la clasificación del manual del programador (SEE - Del
+contribuyente, sección "Observaciones"):
+
+| Rango | `tipo` | Qué significa |
+|---|---|---|
+| 0100–0999 | `excepcion_sunat` | Excepción propia de la SUNAT; el comprobante no se procesó |
+| 1000–1999 | `excepcion_contribuyente` | Excepción de formato o estructura; no se procesó |
+| 2000–3999 | `rechazo` | CDR rechazado: el comprobante no quedó registrado |
+| 4000 en adelante | `observacion` | CDR aceptado con advertencias |
+
+Si un código tiene textos distintos en los dos Excel, se usa el de GRE, que es
+el que se actualizó con el motivo de traslado 19; salvo que solo cambien tildes
+o puntuación, en cuyo caso se queda el de CPE.
+
 ## Catálogos que remiten a estándares externos
 
 El anexo no lista estos catálogos: indica el estándar que hay que usar.

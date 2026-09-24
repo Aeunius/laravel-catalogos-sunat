@@ -27,6 +27,20 @@ it('acepta el listado D-37 sin importar mayúsculas', function () {
     expect($this->catalogos->get('d-37')->numero)->toBe('D-37');
 });
 
+it('acepta los códigos de retorno sin importar mayúsculas', function () {
+    expect($this->catalogos->get('Codigos-Retorno')->numero)->toBe('codigos-retorno');
+});
+
+it('clasifica los códigos de retorno según su rango', function (string $codigo, string $tipo) {
+    expect($this->catalogos->buscar('codigos-retorno', $codigo)->get('tipo'))->toBe($tipo);
+})->with([
+    'excepción de la SUNAT' => ['0100', 'excepcion_sunat'],
+    'excepción del contribuyente' => ['1034', 'excepcion_contribuyente'],
+    'rechazo' => ['2047', 'rechazo'],
+    'último rechazo' => ['3244', 'rechazo'],
+    'observación' => ['4000', 'observacion'],
+]);
+
 it('lanza excepción si el catálogo no existe', function () {
     $this->catalogos->get('99');
 })->throws(CatalogoNoExiste::class, 'No existe el catálogo [99]');
@@ -88,9 +102,9 @@ it('recorre los ítems y los expone como colección', function () {
 it('lista los catálogos disponibles en orden', function () {
     $disponibles = $this->catalogos->disponibles();
 
-    expect($disponibles)->toHaveCount(43)
+    expect($disponibles)->toHaveCount(44)
         ->and($disponibles[0])->toBe('01')
-        ->and(array_slice($disponibles, -2))->toBe(['65', 'D-37'])
+        ->and(array_slice($disponibles, -3))->toBe(['65', 'D-37', 'codigos-retorno'])
         ->and($disponibles)->not->toContain('25-jerarquia');
 });
 

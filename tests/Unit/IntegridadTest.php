@@ -43,7 +43,7 @@ it('incluye todos los catálogos del Anexo N.° 8', function () {
     $esperados = [
         ...array_map(fn ($n) => sprintf('%02d', $n), range(1, 27)),
         ...array_map('strval', range(51, 65)),
-        'D-37', '25-jerarquia',
+        'D-37', '25-jerarquia', 'codigos-retorno',
     ];
 
     expect($numeros)->toEqualCanonicalizing($esperados);
@@ -66,6 +66,10 @@ it('tipa las propiedades adicionales', function () {
     }
     foreach ($leer('61') as $item) {
         expect($item['gre'])->toBeList()->each->toBeIn(['remitente', 'transportista']);
+    }
+    foreach ($leer('codigos-retorno') as $codigo => $item) {
+        expect((string) $codigo)->toMatch('/^\d{4}$/')
+            ->and($item['tipo'])->toBeIn(['excepcion_sunat', 'excepcion_contribuyente', 'rechazo', 'observacion']);
     }
     foreach ($leer('03') as $item) {
         expect($item['estado'])->toBeIn(['vigente', 'obsoleto', 'eliminado']);

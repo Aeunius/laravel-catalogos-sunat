@@ -73,6 +73,7 @@ $catalogos['03'] = unidadesDeMedida();
 $catalogos['04'] = paises();
 $catalogos['13'] = ubigeos();
 [$catalogos['25'], $jerarquia] = productosUnspsc();
+$catalogos['codigos-retorno'] = codigosRetorno();
 
 if (! is_dir(DESTINO)) {
     mkdir(DESTINO, 0755, true);
@@ -230,6 +231,73 @@ function porcentajesDeRetencion(array &$catalogo): void
 
         $catalogo['items'][$codigo]['porcentaje'] = $m[1] + 0;
     }
+}
+
+/**
+ * Los códigos con que responde la SUNAT (hoja "CódigosRetorno"), con el tipo
+ * que les asigna el manual del programador según su rango.
+ */
+function codigosRetorno(): array
+{
+    $leer = function (string $archivo): array {
+        $codigos = [];
+
+        foreach ((new Xlsx(FUENTES.'/'.$archivo))->filas('CódigosRetorno') as $celdas) {
+            $codigo = limpiar($celdas['A'] ?? '');
+
+            if (preg_match('/^\d{4}$/', $codigo)) {
+                $codigos[$codigo] = limpiar($celdas['B'] ?? '');
+            }
+        }
+
+        return $codigos;
+    };
+
+    $codigos = $leer(EXCEL_CPE);
+
+    // El Excel de GRE es el que se actualizó con el motivo de traslado 19: si un
+    // texto difiere, manda el suyo, salvo que solo cambien tildes o puntuación
+    // (el de CPE las trae mejor).
+    foreach ($leer(EXCEL_GRE) as $codigo => $descripcion) {
+        if (! isset($codigos[$codigo]) || comparable($codigos[$codigo]) !== comparable($descripcion)) {
+            $codigos[$codigo] = $descripcion;
+        }
+    }
+
+    $items = [];
+
+    foreach ($codigos as $codigo => $descripcion) {
+        if ($descripcion === '') {
+            falla("El código de retorno {$codigo} no tiene descripción");
+        }
+
+        $numero = (int) $codigo;
+
+        $items[$codigo] = [
+            'descripcion' => $descripcion,
+            'tipo' => match (true) {
+                $numero >= 4000 => 'observacion',
+                $numero >= 2000 => 'rechazo',
+                $numero >= 1000 => 'excepcion_contribuyente',
+                default => 'excepcion_sunat',
+            },
+        ];
+    }
+
+    return [
+        'catalogo' => 'codigos-retorno',
+        'nombre' => 'Códigos de retorno de la SUNAT: excepciones, rechazos y observaciones',
+        'fuente' => FUENTE_SUNAT.'; tipo según el rango, del manual del programador (SEE - Del contribuyente)',
+        'items' => $items,
+    ];
+}
+
+/** Texto sin tildes, puntuación ni mayúsculas, para comparar dos versiones. */
+function comparable(string $texto): string
+{
+    $sinTildes = strtr(mb_strtolower($texto), ['á' => 'a', 'é' => 'e', 'í' => 'i', 'ó' => 'o', 'ú' => 'u', 'ü' => 'u', 'ñ' => 'n']);
+
+    return preg_replace('/[^a-z0-9]+/', '', $sinTildes);
 }
 
 // ---------------------------------------------------------------------------

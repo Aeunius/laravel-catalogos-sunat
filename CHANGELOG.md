@@ -14,6 +14,9 @@ indica a qué versión del Anexo N.° 8 de la SUNAT corresponden sus datos.
   `donde()` para exigir además una propiedad del código. Mensajes en español e
   inglés, publicables con `--tag=catalogos-sunat-translations`.
 - Catálogo 13: la capital legal de cada distrito, en `capital`.
+- `codigos-retorno`: los 2.020 códigos con que responde la SUNAT, con su tipo
+  según el manual del programador (`excepcion_sunat`,
+  `excepcion_contribuyente`, `rechazo`, `observacion`).
 
 ### Cambiado
 
