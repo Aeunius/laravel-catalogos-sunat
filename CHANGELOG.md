@@ -8,6 +8,10 @@ indica a qué versión del Anexo N.° 8 de la SUNAT corresponden sus datos.
 
 ## [Sin publicar]
 
+## [0.2.0] - 2026-09-23
+
+Datos: los mismos Excel de la SUNAT del 21-04-2025; ubigeo del INEI (Límites 2015).
+
 ### Agregado
 
 - Regla `CodigoCatalogo` y su versión en texto `codigo_catalogo:NN`, con
@@ -45,5 +49,6 @@ Primera versión. Datos: Excel de reglas de validación CPE y GRE de la SUNAT de
   `TipoAfectacionIgv` (07).
 - `make catalogos`, que regenera los datos desde las fuentes; ver FUENTES.md.
 
-[Sin publicar]: https://github.com/Aeunius/laravel-catalogos-sunat/compare/v0.1.0...HEAD
+[Sin publicar]: https://github.com/Aeunius/laravel-catalogos-sunat/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/Aeunius/laravel-catalogos-sunat/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/Aeunius/laravel-catalogos-sunat/releases/tag/v0.1.0
