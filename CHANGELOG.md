@@ -8,7 +8,9 @@ indica a qué versión del Anexo N.° 8 de la SUNAT corresponden sus datos.
 
 ## [Sin publicar]
 
-Datos: Excel de reglas de validación CPE y GRE de la SUNAT del 21-04-2025.
+## [0.1.0] - 2026-09-23
+
+Primera versión. Datos: Excel de reglas de validación CPE y GRE de la SUNAT del 21-04-2025.
 
 ### Agregado
 
@@ -25,3 +27,6 @@ Datos: Excel de reglas de validación CPE y GRE de la SUNAT del 21-04-2025.
 - Enums `TipoDocumento` (01), `Moneda` (02), `TipoDocumentoIdentidad` (06) y
   `TipoAfectacionIgv` (07).
 - `make catalogos`, que regenera los datos desde las fuentes; ver FUENTES.md.
+
+[Sin publicar]: https://github.com/Aeunius/laravel-catalogos-sunat/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/Aeunius/laravel-catalogos-sunat/releases/tag/v0.1.0

@@ -14,7 +14,14 @@ tributos, afectación del IGV, tipos de operación, ubigeo, código de producto
   catálogo se lee solo cuando se usa.
 - Funciona con Laravel 12 y 13, y también sin Laravel.
 
-> En desarrollo. Todavía no hay versión publicada.
+## Instalación
+
+```bash
+composer require aeunius/laravel-catalogos-sunat
+```
+
+Requiere PHP 8.2 o superior. En Laravel el service provider y el facade se
+registran solos.
 
 ## Uso
 
