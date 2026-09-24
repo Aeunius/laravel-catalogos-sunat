@@ -31,7 +31,8 @@ final class Repositorio
     }
 
     /**
-     * Los catálogos disponibles, en orden: 01, 02, …, 65, D-37, codigos-retorno.
+     * Los catálogos disponibles, en orden: 01, 02, …, 25, 25-jerarquia, …, 65,
+     * D-37, codigos-retorno.
      *
      * @return list<string>
      */
@@ -40,11 +41,7 @@ final class Repositorio
         $numeros = [];
 
         foreach (glob($this->directorio.'/*.json') ?: [] as $archivo) {
-            $numero = basename($archivo, '.json');
-
-            if (! str_contains($numero, 'jerarquia')) {
-                $numeros[] = $numero;
-            }
+            $numeros[] = basename($archivo, '.json');
         }
 
         usort($numeros, strnatcmp(...));

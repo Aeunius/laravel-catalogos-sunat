@@ -90,10 +90,12 @@ final class CodigoCatalogo implements ValidationRule
     {
         foreach ($this->condiciones as $propiedad => $esperado) {
             $valor = $propiedades[$propiedad] ?? null;
+            $valores = is_array($valor) ? $valor : [$valor];
 
-            $cumple = is_array($valor)
-                ? in_array($esperado, $valor, true)
-                : $valor === $esperado;
+            $cumple = false;
+            foreach ($valores as $candidato) {
+                $cumple = $cumple || self::iguales($candidato, $esperado);
+            }
 
             if (! $cumple) {
                 return false;
@@ -101,5 +103,18 @@ final class CodigoCatalogo implements ValidationRule
         }
 
         return true;
+    }
+
+    /**
+     * Estricto, salvo entre números: el porcentaje 2 del catálogo 22 es igual
+     * a 2.0, pero el código "01" no es igual a 1.
+     */
+    private static function iguales(mixed $valor, string|int|float|bool $esperado): bool
+    {
+        if ((is_int($valor) || is_float($valor)) && (is_int($esperado) || is_float($esperado))) {
+            return $valor == $esperado;
+        }
+
+        return $valor === $esperado;
     }
 }

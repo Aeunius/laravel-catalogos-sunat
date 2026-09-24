@@ -92,7 +92,7 @@ foreach ($catalogos as $numero => $catalogo) {
 }
 
 escribir(DESTINO.'/25-jerarquia.json', $jerarquia);
-printf("%-5s %6d  %s\n", '25', count($jerarquia['items']), 'Jerarquía UNSPSC (segmento, familia, clase)');
+printf("%-5s %6d  %s\n", '25-jerarquia', count($jerarquia['items']), 'Jerarquía UNSPSC (segmento, familia, clase)');
 
 // ---------------------------------------------------------------------------
 // Excel de la SUNAT
@@ -456,7 +456,7 @@ function productosUnspsc(): array
             'items' => $productos,
         ],
         [
-            'catalogo' => '25',
+            'catalogo' => '25-jerarquia',
             'nombre' => 'Jerarquía del código de producto SUNAT: segmentos, familias y clases',
             'fuente' => 'UNSPSC v14_0801 publicado por la SUNAT (Clasificador de Bienes y Servicios)',
             'items' => $jerarquia,

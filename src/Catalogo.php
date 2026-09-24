@@ -6,6 +6,7 @@ use ArrayIterator;
 use Countable;
 use Illuminate\Support\Collection;
 use IteratorAggregate;
+use JsonSerializable;
 use Traversable;
 
 /**
@@ -14,7 +15,7 @@ use Traversable;
  *
  * @implements IteratorAggregate<string, Item>
  */
-final class Catalogo implements Countable, IteratorAggregate
+final class Catalogo implements Countable, IteratorAggregate, JsonSerializable
 {
     /**
      * @param  array<string, array<string, mixed>>  $items  código => [descripcion, ...propiedades]
@@ -57,6 +58,35 @@ final class Catalogo implements Countable, IteratorAggregate
     public function items(): Collection
     {
         return new Collection(iterator_to_array($this->getIterator()));
+    }
+
+    /**
+     * Los códigos van en una lista y no en un objeto indexado por código: PHP
+     * convierte en enteros claves como "0", "1", "2", y json_encode sacaría un
+     * arreglo en unos catálogos y un objeto en otros.
+     *
+     * @return array{numero: string, nombre: string, fuente: string, items: list<array<string, mixed>>}
+     */
+    public function toArray(): array
+    {
+        $items = [];
+
+        foreach ($this as $item) {
+            $items[] = $item->toArray();
+        }
+
+        return [
+            'numero' => $this->numero,
+            'nombre' => $this->nombre,
+            'fuente' => $this->fuente,
+            'items' => $items,
+        ];
+    }
+
+    /** @return array{numero: string, nombre: string, fuente: string, items: list<array<string, mixed>>} */
+    public function jsonSerialize(): array
+    {
+        return $this->toArray();
     }
 
     public function count(): int

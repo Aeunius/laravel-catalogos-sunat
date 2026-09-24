@@ -102,10 +102,29 @@ it('recorre los ítems y los expone como colección', function () {
 it('lista los catálogos disponibles en orden', function () {
     $disponibles = $this->catalogos->disponibles();
 
-    expect($disponibles)->toHaveCount(44)
+    expect($disponibles)->toHaveCount(45)
         ->and($disponibles[0])->toBe('01')
-        ->and(array_slice($disponibles, -3))->toBe(['65', 'D-37', 'codigos-retorno'])
-        ->and($disponibles)->not->toContain('25-jerarquia');
+        ->and(array_slice($disponibles, 24, 3))->toBe(['25', '25-jerarquia', '26'])
+        ->and(array_slice($disponibles, -3))->toBe(['65', 'D-37', 'codigos-retorno']);
+});
+
+it('da la jerarquía del código de producto', function () {
+    // Los 6 primeros dígitos de un producto más "00" son su clase.
+    expect($this->catalogos->descripcion('25-jerarquia', '10101500'))->toBe('Animales de granja')
+        ->and($this->catalogos->descripcion('25-jerarquia', '10000000'))->toBe('Material Vivo Vegetal y Animal, Accesorios y Suministros');
+});
+
+it('convierte el catálogo en arreglo y JSON con los códigos en lista', function () {
+    $catalogo = $this->catalogos->get('26');
+    $json = json_decode(json_encode($catalogo), true);
+
+    expect($catalogo->toArray())->toBe($json)
+        ->and($json['numero'])->toBe('26')
+        ->and($json['items'])->toBeList()->toHaveCount(3)
+        ->and($json['items'][0])->toBe(['codigo' => '0', 'descripcion' => 'Sin información']);
+
+    // Un catálogo con códigos que no son 0, 1, 2… también sale como lista.
+    expect(json_decode(json_encode($this->catalogos->get('19')), true)['items'])->toBeList();
 });
 
 it('lee cada catálogo una sola vez', function () {

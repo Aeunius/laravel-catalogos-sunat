@@ -51,6 +51,15 @@ it('exige la propiedad con donde()', function () {
         ->and(validaCodigo('01', (new CodigoCatalogo('22'))->donde('porcentaje', 2))->passes())->toBeTrue();
 });
 
+it('compara los números por su valor en donde()', function () {
+    $percepcion = fn (int|float|string $porcentaje) => (new CodigoCatalogo('22'))->donde('porcentaje', $porcentaje);
+
+    expect(validaCodigo('01', $percepcion(2.0))->passes())->toBeTrue()
+        ->and(validaCodigo('03', $percepcion(0.5))->passes())->toBeTrue()
+        // Un texto no es un número: "2" no es igual a 2.
+        ->and(validaCodigo('01', $percepcion('2'))->fails())->toBeTrue();
+});
+
 it('muestra el mensaje traducido', function (string $locale, string $mensaje) {
     app()->setLocale($locale);
 
