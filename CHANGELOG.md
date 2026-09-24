@@ -13,6 +13,14 @@ indica a qué versión del Anexo N.° 8 de la SUNAT corresponden sus datos.
 - Regla `CodigoCatalogo` y su versión en texto `codigo_catalogo:NN`, con
   `donde()` para exigir además una propiedad del código. Mensajes en español e
   inglés, publicables con `--tag=catalogos-sunat-translations`.
+- Catálogo 13: la capital legal de cada distrito, en `capital`.
+
+### Cambiado
+
+- Catálogo 13: se genera desde el archivo oficial del INEI que cita la SUNAT.
+  Los nombres pasan a mayúsculas sin tildes, como los publica el INEI, y se
+  corrigen 52 distritos que venían truncados, con otro nombre o con la
+  provincia equivocada (Putumayo figuraba en Maynas).
 
 ## [0.1.0] - 2026-09-23
 

@@ -320,23 +320,39 @@ function paises(): array
     ];
 }
 
-/** 13: ubigeo del INEI. */
+/**
+ * 13: ubigeo del INEI, el archivo que cita la SUNAT. Viene en mayúsculas y sin
+ * tildes; se deja así antes que reconstruir los nombres a mano.
+ */
 function ubigeos(): array
 {
     $items = [];
 
-    foreach (csv('ubigeo-inei.csv') as $fila) {
-        $items[$fila['Ubigeo']] = [
-            'descripcion' => $fila['Distrito'],
-            'provincia' => $fila['Provincia'],
-            'departamento' => $fila['Departamento'],
+    foreach ((new Xlsx(FUENTES.'/inei-ubigeo-distritos.xlsx'))->filas('Limites2015') as $fila => $celdas) {
+        if ($fila === 1) {
+            if (array_values($celdas) !== ['IDDIST', 'NOMBDEP', 'NOMBPROV', 'NOMBDIST', 'NOM_CAPITAL (LEGAL)']) {
+                falla('El archivo de ubigeo del INEI cambió de columnas: '.implode(', ', $celdas));
+            }
+
+            continue;
+        }
+
+        // "ANCO_HUALLO": el INEI escribe con guion bajo el guion del nombre.
+        $nombre = fn (string $columna) => str_replace('_', '-', limpiar($celdas[$columna]));
+
+        $items[$celdas['A']] = [
+            'descripcion' => $nombre('D'),
+            'provincia' => $nombre('C'),
+            'departamento' => $nombre('B'),
+            // "MARMOT /13": llamada a una nota al pie que el archivo no trae.
+            'capital' => preg_replace('#\s*/\d+$#', '', $nombre('E')),
         ];
     }
 
     return [
         'catalogo' => '13',
         'nombre' => 'Código de ubicación geográfica (UBIGEO)',
-        'fuente' => 'Ubigeo del INEI',
+        'fuente' => 'INEI, código de ubicación geográfica por distrito (Límites 2015), publicado en datosabiertos.gob.pe',
         'items' => $items,
     ];
 }

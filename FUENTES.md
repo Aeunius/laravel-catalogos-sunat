@@ -67,8 +67,13 @@ El anexo no lista estos catálogos: indica el estándar que hay que usar.
 | 02 Nombres y símbolos | Unicode CLDR, locale `es-PE` | `cldr-es-PE-monedas.json` | `cldr-numbers-full` 48.2.0 |
 | 03 Unidades de medida | UN/ECE Recomendación 20 | `rec20-unidades.csv` | Conserva los códigos obsoletos y eliminados, marcados en `estado`: rechazar uno que la SUNAT todavía acepte impediría facturar |
 | 04 Países | ISO 3166-1 | `iso3166-paises.csv` | Nombres en español |
-| 13 Ubigeo | INEI | `ubigeo-inei.csv` | 1.874 distritos |
+| 13 Ubigeo | INEI | `inei-ubigeo-distritos.xlsx` | Límites 2015, 1.874 distritos: el archivo que cita la SUNAT ([datosabiertos](https://www.datosabiertos.gob.pe/dataset/c%C3%B3digo-de-ubicaci%C3%B3n-geogr%C3%A1fica-en-el-per%C3%BA-instituto-nacional-de-estad%C3%ADstica-e-inform%C3%A1tica)) |
 | 25 Producto SUNAT | UNSPSC v14_0801 | `unspsc-v14-sunat.xlsm` | Clasificador publicado por la SUNAT |
+
+El ubigeo va en mayúsculas y sin tildes, como lo publica el INEI; solo se
+cambia el guion bajo por guion (`ANCO_HUALLO` → `ANCO-HUALLO`) y se quitan las
+llamadas a notas al pie de 17 capitales (`MARMOT /13`), cuyas notas el archivo
+no trae. Cada distrito lleva además su provincia, departamento y capital legal.
 
 El catálogo 25 se guarda en dos archivos: `25.json` con los 49.022 productos, que
 es el nivel que exige el comprobante, y `25-jerarquia.json` con los segmentos,

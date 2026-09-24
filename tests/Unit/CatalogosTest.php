@@ -42,7 +42,7 @@ it('responde si un código existe', function () {
 it('devuelve la descripción de un código', function () {
     expect($this->catalogos->descripcion('01', '01'))->toBe('Factura')
         ->and($this->catalogos->descripcion('06', '6'))->toBe('Registro Unico de Contribuyentes')
-        ->and($this->catalogos->descripcion('13', '150114'))->toBe('La Molina')
+        ->and($this->catalogos->descripcion('13', '150114'))->toBe('LA MOLINA')
         ->and($this->catalogos->descripcion('25', '10101502'))->toBe('Perros')
         ->and($this->catalogos->descripcion('01', 'no-existe'))->toBeNull();
 });
