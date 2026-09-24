@@ -94,6 +94,26 @@ La descripción y las propiedades salen del catálogo, no del enum, y un test
 verifica que cada enum tenga exactamente los códigos de su catálogo. Para el
 resto de catálogos, `Catalogos::get()`.
 
+### Validación
+
+```php
+use Aeunius\CatalogosSunat\Rules\CodigoCatalogo;
+
+$request->validate([
+    'tipo_doc'  => ['required', new CodigoCatalogo('01')],
+    'moneda'    => 'required|codigo_catalogo:02',
+
+    // Además de existir, el código debe cumplir una propiedad del catálogo:
+    // un tipo de operación que admita boletas, un descuento a nivel global…
+    'operacion' => ['required', (new CodigoCatalogo('51'))->donde('comprobantes', 'boleta')],
+    'descuento' => ['required', (new CodigoCatalogo('53'))->donde('nivel', 'global')],
+]);
+```
+
+Acepta texto, enteros y los enums del paquete. Los mensajes vienen en español e
+inglés, y se publican con
+`php artisan vendor:publish --tag=catalogos-sunat-translations`.
+
 ### Sin Laravel
 
 ```php

@@ -8,6 +8,12 @@ indica a qué versión del Anexo N.° 8 de la SUNAT corresponden sus datos.
 
 ## [Sin publicar]
 
+### Agregado
+
+- Regla `CodigoCatalogo` y su versión en texto `codigo_catalogo:NN`, con
+  `donde()` para exigir además una propiedad del código. Mensajes en español e
+  inglés, publicables con `--tag=catalogos-sunat-translations`.
+
 ## [0.1.0] - 2026-09-23
 
 Primera versión. Datos: Excel de reglas de validación CPE y GRE de la SUNAT del 21-04-2025.
