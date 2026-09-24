@@ -1,0 +1,250 @@
+﻿codigo_alpha2,codigo_alpha3,codigo_numerico,nombre_es,nombre_en,region,subregion,capital,moneda_iso4217,moneda_nombre,prefijo_telefonico,dominio_internet,condicion
+AD,AND,020,Andorra,Andorra,Europa,Europa meridional,Andorra la Vella,EUR,Euro,376,.ad,Estado independiente
+AE,ARE,784,Emiratos Árabes Unidos,United Arab Emirates,Asia,Asia occidental,Abu Dhabi,AED,UAE Dirham,971,.ae,Estado independiente
+AF,AFG,004,Afganistán,Afghanistan,Asia,Asia meridional,Kabul,AFN,Afghani,93,.af,Estado independiente
+AG,ATG,028,Antigua y Barbuda,Antigua and Barbuda,América,América Latina y el Caribe,St. John's,XCD,East Caribbean Dollar,1-268,.ag,Estado independiente
+AI,AIA,660,Anguila,Anguilla,América,América Latina y el Caribe,The Valley,XCD,East Caribbean Dollar,1-264,.ai,Territory of GB
+AL,ALB,008,Albania,Albania,Europa,Europa meridional,Tirana,ALL,Lek,355,.al,Estado independiente
+AM,ARM,051,Armenia,Armenia,Asia,Asia occidental,Yerevan,AMD,Armenian Dram,374,.am,Estado independiente
+AO,AGO,024,Angola,Angola,África,África subsahariana,Luanda,AOA,Kwanza,244,.ao,Estado independiente
+AQ,ATA,010,Antártida,Antarctica,,,,,No universal currency,672,.aq,Territorio internacional
+AR,ARG,032,Argentina,Argentina,América,América Latina y el Caribe,Buenos Aires,ARS,Argentine Peso,54,.ar,Estado independiente
+AS,ASM,016,Samoa Americana,American Samoa,Oceanía,Polinesia,Pago Pago,USD,US Dollar,1-684,.as,Territory of US
+AT,AUT,040,Austria,Austria,Europa,Europa occidental,Vienna,EUR,Euro,43,.at,Estado independiente
+AU,AUS,036,Australia,Australia,Oceanía,Australia y Nueva Zelandia,Canberra,AUD,Australian Dollar,61,.au,Estado independiente
+AW,ABW,533,Aruba,Aruba,América,América Latina y el Caribe,Oranjestad,AWG,Aruban Florin,297,.aw,Part of NL
+AX,ALA,248,Islas Åland,Åland Islands,Europa,Europa septentrional,Mariehamn,EUR,Euro,358,.ax,Part of FI
+AZ,AZE,031,Azerbaiyán,Azerbaijan,Asia,Asia occidental,Baku,AZN,Azerbaijan Manat,994,.az,Estado independiente
+BA,BIH,070,Bosnia y Herzegovina,Bosnia and Herzegovina,Europa,Europa meridional,Sarajevo,BAM,Convertible Mark,387,.ba,Estado independiente
+BB,BRB,052,Barbados,Barbados,América,América Latina y el Caribe,Bridgetown,BBD,Barbados Dollar,1-246,.bb,Estado independiente
+BD,BGD,050,Bangladesh,Bangladesh,Asia,Asia meridional,Dhaka,BDT,Taka,880,.bd,Estado independiente
+BE,BEL,056,Bélgica,Belgium,Europa,Europa occidental,Brussels,EUR,Euro,32,.be,Estado independiente
+BF,BFA,854,Burkina Faso,Burkina Faso,África,África subsahariana,Ouagadougou,XOF,CFA Franc BCEAO,226,.bf,Estado independiente
+BG,BGR,100,Bulgaria,Bulgaria,Europa,Europa oriental,Sofia,EUR,Euro,359,.bg,Estado independiente
+BH,BHR,048,Bahrein,Bahrain,Asia,Asia occidental,Manama,BHD,Bahraini Dinar,973,.bh,Estado independiente
+BI,BDI,108,Burundi,Burundi,África,África subsahariana,Gitega,BIF,Burundi Franc,257,.bi,Estado independiente
+BJ,BEN,204,Benin,Benin,África,África subsahariana,Porto-Novo,XOF,CFA Franc BCEAO,229,.bj,Estado independiente
+BL,BLM,652,San Barthélemy,Saint Barthélemy,América,América Latina y el Caribe,Gustavia,EUR,Euro,590,.gp,Part of FR
+BM,BMU,060,Bermuda,Bermuda,América,América del Norte,Hamilton,BMD,Bermudian Dollar,1-441,.bm,Territory of GB
+BN,BRN,096,Brunei Darussalam,Brunei Darussalam,Asia,Asia sudoriental,Bandar Seri Begawan,BND,Brunei Dollar,673,.bn,Estado independiente
+BO,BOL,068,Bolivia (Estado Plurinacional de),Bolivia (Plurinational State of),América,América Latina y el Caribe,Sucre,BOB,Boliviano,591,.bo,Estado independiente
+BQ,BES,535,"Bonaire, San Eustaquio y Saba","Bonaire, Sint Eustatius and Saba",América,América Latina y el Caribe,,USD,US Dollar,599,.bq,Part of NL
+BR,BRA,076,Brasil,Brazil,América,América Latina y el Caribe,Brasilia,BRL,Brazilian Real,55,.br,Estado independiente
+BS,BHS,044,Bahamas,Bahamas,América,América Latina y el Caribe,Nassau,BSD,Bahamian Dollar,1-242,.bs,Estado independiente
+BT,BTN,064,Bhután,Bhutan,Asia,Asia meridional,Thimphu,"INR,BTN","Indian Rupee,Ngultrum",975,.bt,Estado independiente
+BV,BVT,074,Isla Bouvet,Bouvet Island,América,América Latina y el Caribe,,NOK,Norwegian Krone,47,.bv,Territory of NO
+BW,BWA,072,Botswana,Botswana,África,África subsahariana,Gaborone,BWP,Pula,267,.bw,Estado independiente
+BY,BLR,112,Belarús,Belarus,Europa,Europa oriental,Minsk,BYN,Belarusian Ruble,375,.by,Estado independiente
+BZ,BLZ,084,Belice,Belize,América,América Latina y el Caribe,Belmopan,BZD,Belize Dollar,501,.bz,Estado independiente
+CA,CAN,124,Canadá,Canada,América,América del Norte,Ottawa,CAD,Canadian Dollar,1,.ca,Estado independiente
+CC,CCK,166,Islas Cocos (Keeling),Cocos (Keeling) Islands,Oceanía,Australia y Nueva Zelandia,West Island,AUD,Australian Dollar,61,.cc,Territory of AU
+CD,COD,180,República Democrática del Congo,Democratic Republic of the Congo,África,África subsahariana,Kinshasa,CDF,Congolese Franc,243,.cd,Estado independiente
+CF,CAF,140,República Centroafricana,Central African Republic,África,África subsahariana,Bangui,XAF,CFA Franc BEAC,236,.cf,Estado independiente
+CG,COG,178,Congo,Congo,África,África subsahariana,Brazzaville,XAF,CFA Franc BEAC,242,.cg,Estado independiente
+CH,CHE,756,Suiza,Switzerland,Europa,Europa occidental,Bern,CHF,Swiss Franc,41,.ch,Estado independiente
+CI,CIV,384,Côte d’Ivoire,Ivory Coast,África,África subsahariana,Yamoussoukro,XOF,CFA Franc BCEAO,225,.ci,Estado independiente
+CK,COK,184,Islas Cook,Cook Islands,Oceanía,Polinesia,Avarua,NZD,New Zealand Dollar,682,.ck,Associated with NZ
+CL,CHL,152,Chile,Chile,América,América Latina y el Caribe,Santiago,CLP,Chilean Peso,56,.cl,Estado independiente
+CM,CMR,120,Camerún,Cameroon,África,África subsahariana,Yaounde,XAF,CFA Franc BEAC,237,.cm,Estado independiente
+CN,CHN,156,China,China,Asia,Asia oriental,Beijing,CNY,Yuan Renminbi,86,.cn,Estado independiente
+CO,COL,170,Colombia,Colombia,América,América Latina y el Caribe,Bogota,COP,Colombian Peso,57,.co,Estado independiente
+CR,CRI,188,Costa Rica,Costa Rica,América,América Latina y el Caribe,San Jose,CRC,Costa Rican Colon,506,.cr,Estado independiente
+CU,CUB,192,Cuba,Cuba,América,América Latina y el Caribe,Havana,CUP,Cuban Peso,53,.cu,Estado independiente
+CV,CPV,132,Cabo Verde,Cabo Verde,África,África subsahariana,Praia,CVE,Cabo Verde Escudo,238,.cv,Estado independiente
+CW,CUW,531,Curazao,Curaçao,América,América Latina y el Caribe, Willemstad,XCG,Caribbean Guilder,599,.cw,Part of NL
+CX,CXR,162,Isla Christmas,Christmas Island,Oceanía,Australia y Nueva Zelandia,Flying Fish Cove,AUD,Australian Dollar,61,.cx,Territory of AU
+CY,CYP,196,Chipre,Cyprus,Asia,Asia occidental,Nicosia,EUR,Euro,357,.cy,Estado independiente
+CZ,CZE,203,Chequia,Czechia,Europa,Europa oriental,Prague,CZK,Czech Koruna,420,.cz,Estado independiente
+DE,DEU,276,Alemania,Germany,Europa,Europa occidental,Berlin,EUR,Euro,49,.de,Estado independiente
+DJ,DJI,262,Djibouti,Djibouti,África,África subsahariana,Djibouti,DJF,Djibouti Franc,253,.dj,Estado independiente
+DK,DNK,208,Dinamarca,Denmark,Europa,Europa septentrional,Copenhagen,DKK,Danish Krone,45,.dk,Estado independiente
+DM,DMA,212,Dominica,Dominica,América,América Latina y el Caribe,Roseau,XCD,East Caribbean Dollar,1-767,.dm,Estado independiente
+DO,DOM,214,República Dominicana,Dominican Republic,América,América Latina y el Caribe,Santo Domingo,DOP,Dominican Peso,"1-809,1-829,1-849",.do,Estado independiente
+DZ,DZA,012,Argelia,Algeria,África,África septentrional,Algiers,DZD,Algerian Dinar,213,.dz,Estado independiente
+EC,ECU,218,Ecuador,Ecuador,América,América Latina y el Caribe,Quito,USD,US Dollar,593,.ec,Estado independiente
+EE,EST,233,Estonia,Estonia,Europa,Europa septentrional,Tallinn,EUR,Euro,372,.ee,Estado independiente
+EG,EGY,818,Egipto,Egypt,África,África septentrional,Cairo,EGP,Egyptian Pound,20,.eg,Estado independiente
+EH,ESH,732,Sáhara Occidental,Western Sahara,África,África septentrional,El-Aaiun,MAD,Moroccan Dirham,212,.eh,Soberanía en disputa
+ER,ERI,232,Eritrea,Eritrea,África,África subsahariana,Asmara,ERN,Nakfa,291,.er,Estado independiente
+ES,ESP,724,España,Spain,Europa,Europa meridional,Madrid,EUR,Euro,34,.es,Estado independiente
+ET,ETH,231,Etiopía,Ethiopia,África,África subsahariana,Addis Ababa,ETB,Ethiopian Birr,251,.et,Estado independiente
+FI,FIN,246,Finlandia,Finland,Europa,Europa septentrional,Helsinki,EUR,Euro,358,.fi,Estado independiente
+FJ,FJI,242,Fiji,Fiji,Oceanía,Melanesia,Suva,FJD,Fiji Dollar,679,.fj,Estado independiente
+FK,FLK,238,Islas Malvinas (Falkland),Falkland Islands,América,América Latina y el Caribe,Stanley,FKP,Falkland Islands Pound,500,.fk,Territory of GB
+FM,FSM,583,Micronesia (Estados Federados de),Micronesia (Federated States of),Oceanía,Micronesia,Palikir,USD,US Dollar,691,.fm,Estado independiente
+FO,FRO,234,Islas Feroe,Faroe Islands,Europa,Europa septentrional,Torshavn,DKK,Danish Krone,298,.fo,Part of DK
+FR,FRA,250,Francia,France,Europa,Europa occidental,Paris,EUR,Euro,33,.fr,Estado independiente
+GA,GAB,266,Gabón,Gabon,África,África subsahariana,Libreville,XAF,CFA Franc BEAC,241,.ga,Estado independiente
+GB,GBR,826,Reino Unido de Gran Bretaña e Irlanda del Norte,United Kingdom of Great Britain and Northern Ireland,Europa,Europa septentrional,London,GBP,Pound Sterling,44,.uk,Estado independiente
+GD,GRD,308,Granada,Grenada,América,América Latina y el Caribe,St. George's,XCD,East Caribbean Dollar,1-473,.gd,Estado independiente
+GE,GEO,268,Georgia,Georgia,Asia,Asia occidental,Tbilisi,GEL,Lari,995,.ge,Estado independiente
+GF,GUF,254,Guayana Francesa,French Guiana,América,América Latina y el Caribe,Cayenne,EUR,Euro,594,.gf,Part of FR
+GG,GGY,831,Guernsey,Guernsey,Europa,Europa septentrional,St Peter Port,GBP,Pound Sterling,44,.gg,Crown dependency of GB
+GH,GHA,288,Ghana,Ghana,África,África subsahariana,Accra,GHS,Ghana Cedi,233,.gh,Estado independiente
+GI,GIB,292,Gibraltar,Gibraltar,Europa,Europa meridional,Gibraltar,GIP,Gibraltar Pound,350,.gi,Territory of GB
+GL,GRL,304,Groenlandia,Greenland,América,América del Norte,Nuuk,DKK,Danish Krone,299,.gl,Part of DK
+GM,GMB,270,Gambia,Gambia,África,África subsahariana,Banjul,GMD,Dalasi,220,.gm,Estado independiente
+GN,GIN,324,Guinea,Guinea,África,África subsahariana,Conakry,GNF,Guinean Franc,224,.gn,Estado independiente
+GP,GLP,312,Guadalupe,Guadeloupe,América,América Latina y el Caribe,Basse-Terre,EUR,Euro,590,.gp,Part of FR
+GQ,GNQ,226,Guinea Ecuatorial,Equatorial Guinea,África,África subsahariana,Ciudad de la Paz,XAF,CFA Franc BEAC,240,.gq,Estado independiente
+GR,GRC,300,Grecia,Greece,Europa,Europa meridional,Athens,EUR,Euro,30,.gr,Estado independiente
+GS,SGS,239,Georgia del Sur y las Islas Sandwich del Sur,South Georgia and the South Sandwich Islands,América,América Latina y el Caribe,Grytviken,,No universal currency,500,.gs,Territory of GB
+GT,GTM,320,Guatemala,Guatemala,América,América Latina y el Caribe,Guatemala City,GTQ,Quetzal,502,.gt,Estado independiente
+GU,GUM,316,Guam,Guam,Oceanía,Micronesia,Hagatna,USD,US Dollar,1-671,.gu,Territory of US
+GW,GNB,624,Guinea-Bissau,Guinea-Bissau,África,África subsahariana,Bissau,XOF,CFA Franc BCEAO,245,.gw,Estado independiente
+GY,GUY,328,Guyana,Guyana,América,América Latina y el Caribe,Georgetown,GYD,Guyana Dollar,592,.gy,Estado independiente
+HK,HKG,344,"China, región administrativa especial de Hong Kong","China, Hong Kong Special Administrative Region",Asia,Asia oriental,Hong Kong,HKD,Hong Kong Dollar,852,.hk,Part of CN
+HM,HMD,334,Islas Heard y McDonald,Heard Island and McDonald Islands,Oceanía,Australia y Nueva Zelandia,,AUD,Australian Dollar,672,.hm,Territory of AU
+HN,HND,340,Honduras,Honduras,América,América Latina y el Caribe,Tegucigalpa,HNL,Lempira,504,.hn,Estado independiente
+HR,HRV,191,Croacia,Croatia,Europa,Europa meridional,Zagreb,EUR,Euro,385,.hr,Estado independiente
+HT,HTI,332,Haití,Haiti,América,América Latina y el Caribe,Port-au-Prince,"HTG,USD","Gourde,US Dollar",509,.ht,Estado independiente
+HU,HUN,348,Hungría,Hungary,Europa,Europa oriental,Budapest,HUF,Forint,36,.hu,Estado independiente
+ID,IDN,360,Indonesia,Indonesia,Asia,Asia sudoriental,Jakarta,IDR,Rupiah,62,.id,Estado independiente
+IE,IRL,372,Irlanda,Ireland,Europa,Europa septentrional,Dublin,EUR,Euro,353,.ie,Estado independiente
+IL,ISR,376,Israel,Israel,Asia,Asia occidental,Jerusalem,ILS,New Israeli Sheqel,972,.il,Estado independiente
+IM,IMN,833,Isla de Man,Isle of Man,Europa,Europa septentrional,Douglas,GBP,Pound Sterling,44,.im,Crown dependency of GB
+IN,IND,356,India,India,Asia,Asia meridional,New Delhi,INR,Indian Rupee,91,.in,Estado independiente
+IO,IOT,086,Territorio Británico del Océano Índico,British Indian Ocean Territory,África,África subsahariana,Diego Garcia,USD,US Dollar,246,.io,Territory of GB
+IQ,IRQ,368,Iraq,Iraq,Asia,Asia occidental,Baghdad,IQD,Iraqi Dinar,964,.iq,Estado independiente
+IR,IRN,364,Irán (República Islámica del),Iran (Islamic Republic of),Asia,Asia meridional,Tehran,IRR,Iranian Rial,98,.ir,Estado independiente
+IS,ISL,352,Islandia,Iceland,Europa,Europa septentrional,Reykjavik,ISK,Iceland Krona,354,.is,Estado independiente
+IT,ITA,380,Italia,Italy,Europa,Europa meridional,Rome,EUR,Euro,39,.it,Estado independiente
+JE,JEY,832,Jersey,Jersey,Europa,Europa septentrional,Saint Helier,GBP,Pound Sterling,44,.je,Crown dependency of GB
+JM,JAM,388,Jamaica,Jamaica,América,América Latina y el Caribe,Kingston,JMD,Jamaican Dollar,1-876,.jm,Estado independiente
+JO,JOR,400,Jordania,Jordan,Asia,Asia occidental,Amman,JOD,Jordanian Dinar,962,.jo,Estado independiente
+JP,JPN,392,Japón,Japan,Asia,Asia oriental,Tokyo,JPY,Yen,81,.jp,Estado independiente
+KE,KEN,404,Kenya,Kenya,África,África subsahariana,Nairobi,KES,Kenyan Shilling,254,.ke,Estado independiente
+KG,KGZ,417,Kirguistán,Kyrgyzstan,Asia,Asia central,Bishkek,KGS,Som,996,.kg,Estado independiente
+KH,KHM,116,Camboya,Cambodia,Asia,Asia sudoriental,Phnom Penh,KHR,Riel,855,.kh,Estado independiente
+KI,KIR,296,Kiribati,Kiribati,Oceanía,Micronesia,Tarawa,AUD,Australian Dollar,686,.ki,Estado independiente
+KM,COM,174,Comoras,Comoros,África,África subsahariana,Moroni,KMF,Comorian Franc ,269,.km,Estado independiente
+KN,KNA,659,Saint Kitts y Nevis,Saint Kitts and Nevis,América,América Latina y el Caribe,Basseterre,XCD,East Caribbean Dollar,1-869,.kn,Estado independiente
+KP,PRK,408,República Popular Democrática de Corea,Democratic People's Republic of Korea,Asia,Asia oriental,Pyongyang,KPW,North Korean Won,850,.kp,Estado independiente
+KR,KOR,410,República de Corea,Republic of Korea,Asia,Asia oriental,Seoul,KRW,Won,82,.kr,Estado independiente
+KW,KWT,414,Kuwait,Kuwait,Asia,Asia occidental,Kuwait City,KWD,Kuwaiti Dinar,965,.kw,Estado independiente
+KY,CYM,136,Islas Caimán,Cayman Islands,América,América Latina y el Caribe,George Town,KYD,Cayman Islands Dollar,1-345,.ky,Territory of GB
+KZ,KAZ,398,Kazajstán,Kazakhstan,Asia,Asia central,Nur-Sultan,KZT,Tenge,7,.kz,Estado independiente
+LA,LAO,418,República Democrática Popular Lao,Lao People's Democratic Republic,Asia,Asia sudoriental,Vientiane,LAK,Lao Kip,856,.la,Estado independiente
+LB,LBN,422,Líbano,Lebanon,Asia,Asia occidental,Beirut,LBP,Lebanese Pound,961,.lb,Estado independiente
+LC,LCA,662,Santa Lucía,Saint Lucia,América,América Latina y el Caribe,Castries,XCD,East Caribbean Dollar,1-758,.lc,Estado independiente
+LI,LIE,438,Liechtenstein,Liechtenstein,Europa,Europa occidental,Vaduz,CHF,Swiss Franc,423,.li,Estado independiente
+LK,LKA,144,Sri Lanka,Sri Lanka,Asia,Asia meridional,Colombo,LKR,Sri Lanka Rupee,94,.lk,Estado independiente
+LR,LBR,430,Liberia,Liberia,África,África subsahariana,Monrovia,LRD,Liberian Dollar,231,.lr,Estado independiente
+LS,LSO,426,Lesotho,Lesotho,África,África subsahariana,Maseru,"LSL,ZAR","Loti,Rand",266,.ls,Estado independiente
+LT,LTU,440,Lituania,Lithuania,Europa,Europa septentrional,Vilnius,EUR,Euro,370,.lt,Estado independiente
+LU,LUX,442,Luxemburgo,Luxembourg,Europa,Europa occidental,Luxembourg,EUR,Euro,352,.lu,Estado independiente
+LV,LVA,428,Letonia,Latvia,Europa,Europa septentrional,Riga,EUR,Euro,371,.lv,Estado independiente
+LY,LBY,434,Libia,Libya,África,África septentrional,Tripoli,LYD,Libyan Dinar,218,.ly,Estado independiente
+MA,MAR,504,Marruecos,Morocco,África,África septentrional,Rabat,MAD,Moroccan Dirham,212,.ma,Estado independiente
+MC,MCO,492,Mónaco,Monaco,Europa,Europa occidental,Monaco,EUR,Euro,377,.mc,Estado independiente
+MD,MDA,498,República de Moldova,Republic of Moldova,Europa,Europa oriental,Chisinau,MDL,Moldovan Leu,373,.md,Estado independiente
+ME,MNE,499,Montenegro,Montenegro,Europa,Europa meridional,Podgorica,EUR,Euro,382,.me,Estado independiente
+MF,MAF,663,San Martín (parte francesa),Saint Martin (French Part),América,América Latina y el Caribe,Marigot,EUR,Euro,590,.gp,Part of FR
+MG,MDG,450,Madagascar,Madagascar,África,África subsahariana,Antananarivo,MGA,Malagasy Ariary,261,.mg,Estado independiente
+MH,MHL,584,Islas Marshall,Marshall Islands,Oceanía,Micronesia,Majuro,USD,US Dollar,692,.mh,Estado independiente
+MK,MKD,807,Macedonia del Norte,North Macedonia,Europa,Europa meridional,Skopje,MKD,Denar,389,.mk,Estado independiente
+ML,MLI,466,Malí,Mali,África,África subsahariana,Bamako,XOF,CFA Franc BCEAO,223,.ml,Estado independiente
+MM,MMR,104,Myanmar,Myanmar,Asia,Asia sudoriental,Nay Pyi Taw,MMK,Kyat,95,.mm,Estado independiente
+MN,MNG,496,Mongolia,Mongolia,Asia,Asia oriental,Ulaanbaatar,MNT,Tugrik,976,.mn,Estado independiente
+MO,MAC,446,"China, región administrativa especial de Macao","China, Macao Special Administrative Region",Asia,Asia oriental,Macao,MOP,Pataca,853,.mo,Part of CN
+MP,MNP,580,Islas Marianas Septentrionales,Northern Mariana Islands,Oceanía,Micronesia,Saipan,USD,US Dollar,1-670,.mp,Commonwealth of US
+MQ,MTQ,474,Martinica,Martinique,América,América Latina y el Caribe,Fort-de-France,EUR,Euro,596,.mq,Part of FR
+MR,MRT,478,Mauritania,Mauritania,África,África subsahariana,Nouakchott,MRU,Ouguiya,222,.mr,Estado independiente
+MS,MSR,500,Montserrat,Montserrat,América,América Latina y el Caribe,Plymouth,XCD,East Caribbean Dollar,1-664,.ms,Territory of GB
+MT,MLT,470,Malta,Malta,Europa,Europa meridional,Valletta,EUR,Euro,356,.mt,Estado independiente
+MU,MUS,480,Mauricio,Mauritius,África,África subsahariana,Port Louis,MUR,Mauritius Rupee,230,.mu,Estado independiente
+MV,MDV,462,Maldivas,Maldives,Asia,Asia meridional,Male,MVR,Rufiyaa,960,.mv,Estado independiente
+MW,MWI,454,Malawi,Malawi,África,África subsahariana,Lilongwe,MWK,Malawi Kwacha,265,.mw,Estado independiente
+MX,MEX,484,México,Mexico,América,América Latina y el Caribe,Mexico City,MXN,Mexican Peso,52,.mx,Estado independiente
+MY,MYS,458,Malasia,Malaysia,Asia,Asia sudoriental,Kuala Lumpur,MYR,Malaysian Ringgit,60,.my,Estado independiente
+MZ,MOZ,508,Mozambique,Mozambique,África,África subsahariana,Maputo,MZN,Mozambique Metical,258,.mz,Estado independiente
+NA,NAM,516,Namibia,Namibia,África,África subsahariana,Windhoek,"NAD,ZAR","Namibia Dollar,Rand",264,.na,Estado independiente
+NC,NCL,540,Nueva Caledonia,New Caledonia,Oceanía,Melanesia,Noumea,XPF,CFP Franc,687,.nc,Territory of FR
+NE,NER,562,Níger,Niger,África,África subsahariana,Niamey,XOF,CFA Franc BCEAO,227,.ne,Estado independiente
+NF,NFK,574,Isla Norfolk,Norfolk Island,Oceanía,Australia y Nueva Zelandia,Kingston,AUD,Australian Dollar,672,.nf,Territory of AU
+NG,NGA,566,Nigeria,Nigeria,África,África subsahariana,Abuja,NGN,Naira,234,.ng,Estado independiente
+NI,NIC,558,Nicaragua,Nicaragua,América,América Latina y el Caribe,Managua,NIO,Cordoba Oro,505,.ni,Estado independiente
+NL,NLD,528,Países Bajos (Reino de los),Netherlands,Europa,Europa occidental,Amsterdam,EUR,Euro,31,.nl,Estado independiente
+NO,NOR,578,Noruega,Norway,Europa,Europa septentrional,Oslo,NOK,Norwegian Krone,47,.no,Estado independiente
+NP,NPL,524,Nepal,Nepal,Asia,Asia meridional,Kathmandu,NPR,Nepalese Rupee,977,.np,Estado independiente
+NR,NRU,520,Nauru,Nauru,Oceanía,Micronesia,Yaren,AUD,Australian Dollar,674,.nr,Estado independiente
+NU,NIU,570,Niue,Niue,Oceanía,Polinesia,Alofi,NZD,New Zealand Dollar,683,.nu,Associated with NZ
+NZ,NZL,554,Nueva Zelandia,New Zealand,Oceanía,Australia y Nueva Zelandia,Wellington,NZD,New Zealand Dollar,64,.nz,Estado independiente
+OM,OMN,512,Omán,Oman,Asia,Asia occidental,Muscat,OMR,Rial Omani,968,.om,Estado independiente
+PA,PAN,591,Panamá,Panama,América,América Latina y el Caribe,Panama City,"PAB,USD","Balboa,US Dollar",507,.pa,Estado independiente
+PE,PER,604,Perú,Peru,América,América Latina y el Caribe,Lima,PEN,Sol,51,.pe,Estado independiente
+PF,PYF,258,Polinesia Francesa,French Polynesia,Oceanía,Polinesia,Papeete,XPF,CFP Franc,689,.pf,Territory of FR
+PG,PNG,598,Papua Nueva Guinea,Papua New Guinea,Oceanía,Melanesia,Port Moresby,PGK,Kina,675,.pg,Estado independiente
+PH,PHL,608,Filipinas,Philippines,Asia,Asia sudoriental,Manila,PHP,Philippine Peso,63,.ph,Estado independiente
+PK,PAK,586,Pakistán,Pakistan,Asia,Asia meridional,Islamabad,PKR,Pakistan Rupee,92,.pk,Estado independiente
+PL,POL,616,Polonia,Poland,Europa,Europa oriental,Warsaw,PLN,Zloty,48,.pl,Estado independiente
+PM,SPM,666,San Pedro y Miquelón,Saint Pierre and Miquelon,América,América del Norte,Saint-Pierre,EUR,Euro,508,.pm,Part of FR
+PN,PCN,612,Pitcairn,Pitcairn,Oceanía,Polinesia,Adamstown,NZD,New Zealand Dollar,870,.pn,Territory of GB
+PR,PRI,630,Puerto Rico,Puerto Rico,América,América Latina y el Caribe,San Juan,USD,US Dollar,1,.pr,Commonwealth of US
+PS,PSE,275,Estado de Palestina,State of Palestine,Asia,Asia occidental,East Jerusalem,,No universal currency,970,.ps,Soberanía en disputa
+PT,PRT,620,Portugal,Portugal,Europa,Europa meridional,Lisbon,EUR,Euro,351,.pt,Estado independiente
+PW,PLW,585,Palau,Palau,Oceanía,Micronesia,Melekeok,USD,US Dollar,680,.pw,Estado independiente
+PY,PRY,600,Paraguay,Paraguay,América,América Latina y el Caribe,Asuncion,PYG,Guarani,595,.py,Estado independiente
+QA,QAT,634,Qatar,Qatar,Asia,Asia occidental,Doha,QAR,Qatari Rial,974,.qa,Estado independiente
+RE,REU,638,Reunión,Réunion,África,África subsahariana,Saint-Denis,EUR,Euro,262,.re,Part of FR
+RO,ROU,642,Rumania,Romania,Europa,Europa oriental,Bucharest,RON,Romanian Leu,40,.ro,Estado independiente
+RS,SRB,688,Serbia,Serbia,Europa,Europa meridional,Belgrade,RSD,Serbian Dinar,381 p,.rs,Estado independiente
+RU,RUS,643,Federación de Rusia,Russian Federation,Europa,Europa oriental,Moscow,RUB,Russian Ruble,7,.ru,Estado independiente
+RW,RWA,646,Rwanda,Rwanda,África,África subsahariana,Kigali,RWF,Rwanda Franc,250,.rw,Estado independiente
+SA,SAU,682,Arabia Saudita,Saudi Arabia,Asia,Asia occidental,Riyadh,SAR,Saudi Riyal,966,.sa,Estado independiente
+SB,SLB,090,Islas Salomón,Solomon Islands,Oceanía,Melanesia,Honiara,SBD,Solomon Islands Dollar,677,.sb,Estado independiente
+SC,SYC,690,Seychelles,Seychelles,África,África subsahariana,Victoria,SCR,Seychelles Rupee,248,.sc,Estado independiente
+SD,SDN,729,Sudán,Sudan,África,África septentrional,Khartoum,SDG,Sudanese Pound,249,.sd,Estado independiente
+SE,SWE,752,Suecia,Sweden,Europa,Europa septentrional,Stockholm,SEK,Swedish Krona,46,.se,Estado independiente
+SG,SGP,702,Singapur,Singapore,Asia,Asia sudoriental,Singapore,SGD,Singapore Dollar,65,.sg,Estado independiente
+SH,SHN,654,Santa Elena,Saint Helena,África,África subsahariana,Jamestown,SHP,Saint Helena Pound,290 n,.sh,Territory of GB
+SI,SVN,705,Eslovenia,Slovenia,Europa,Europa meridional,Ljubljana,EUR,Euro,386,.si,Estado independiente
+SJ,SJM,744,Islas Svalbard y Jan Mayen,Svalbard and Jan Mayen Islands,Europa,Europa septentrional,Longyearbyen,NOK,Norwegian Krone,47,.sj,Territory of NO
+SK,SVK,703,Eslovaquia,Slovakia,Europa,Europa oriental,Bratislava,EUR,Euro,421,.sk,Estado independiente
+SL,SLE,694,Sierra Leona,Sierra Leone,África,África subsahariana,Freetown,SLE,Leone,232,.sl,Estado independiente
+SM,SMR,674,San Marino,San Marino,Europa,Europa meridional,San Marino,EUR,Euro,378,.sm,Estado independiente
+SN,SEN,686,Senegal,Senegal,África,África subsahariana,Dakar,XOF,CFA Franc BCEAO,221,.sn,Estado independiente
+SO,SOM,706,Somalia,Somalia,África,África subsahariana,Mogadishu,SOS,Somali Shilling,252,.so,Estado independiente
+SR,SUR,740,Suriname,Suriname,América,América Latina y el Caribe,Paramaribo,SRD,Surinam Dollar,597,.sr,Estado independiente
+SS,SSD,728,Sudán del Sur,South Sudan,África,África subsahariana,Juba,SSP,South Sudanese Pound,211,.ss,Estado independiente
+ST,STP,678,Santo Tomé y Príncipe,Sao Tome and Principe,África,África subsahariana,Sao Tome,STN,Dobra,239,.st,Estado independiente
+SV,SLV,222,El Salvador,El Salvador,América,América Latina y el Caribe,San Salvador,"SVC,USD","El Salvador Colon,US Dollar",503,.sv,Estado independiente
+SX,SXM,534,San Martín (parte Holandesa),Sint Maarten (Dutch part),América,América Latina y el Caribe,Philipsburg,XCG,Caribbean Guilder,1-721,.sx,Part of NL
+SY,SYR,760,República Árabe Siria,Syrian Arab Republic,Asia,Asia occidental,Damascus,SYP,Syrian Pound,963,.sy,Estado independiente
+SZ,SWZ,748,Eswatini,Eswatini,África,África subsahariana,Mbabane,SZL,Lilangeni,268,.sz,Estado independiente
+TC,TCA,796,Islas Turcas y Caicos,Turks and Caicos Islands,América,América Latina y el Caribe,Cockburn Town,USD,US Dollar,1-649,.tc,Territory of GB
+TD,TCD,148,Chad,Chad,África,África subsahariana,N'Djamena,XAF,CFA Franc BEAC,235,.td,Estado independiente
+TF,ATF,260,Territorio de las Tierras Australes Francesas,French Southern Territories,África,África subsahariana,Port-aux-Francais,EUR,Euro,262,.tf,Territory of FR
+TG,TGO,768,Togo,Togo,África,África subsahariana,Lome,XOF,CFA Franc BCEAO,228,.tg,Estado independiente
+TH,THA,764,Tailandia,Thailand,Asia,Asia sudoriental,Bangkok,THB,Baht,66,.th,Estado independiente
+TJ,TJK,762,Tayikistán,Tajikistan,Asia,Asia central,Dushanbe,TJS,Somoni,992,.tj,Estado independiente
+TK,TKL,772,Tokelau,Tokelau,Oceanía,Polinesia,,NZD,New Zealand Dollar,690,.tk,Territory of NZ
+TL,TLS,626,Timor-Leste,Timor-Leste,Asia,Asia sudoriental,Dili,USD,US Dollar,670,.tl,Estado independiente
+TM,TKM,795,Turkmenistán,Turkmenistan,Asia,Asia central,Ashgabat,TMT,Turkmenistan New Manat,993,.tm,Estado independiente
+TN,TUN,788,Túnez,Tunisia,África,África septentrional,Tunis,TND,Tunisian Dinar,216,.tn,Estado independiente
+TO,TON,776,Tonga,Tonga,Oceanía,Polinesia,Nuku'alofa,TOP,Pa’anga,676,.to,Estado independiente
+TR,TUR,792,Türkiye,Türkiye,Asia,Asia occidental,Ankara,,,90,.tr,Estado independiente
+TT,TTO,780,Trinidad y Tabago,Trinidad and Tobago,América,América Latina y el Caribe,Port of Spain,TTD,Trinidad and Tobago Dollar,1-868,.tt,Estado independiente
+TV,TUV,798,Tuvalu,Tuvalu,Oceanía,Polinesia,Funafuti,AUD,Australian Dollar,688,.tv,Estado independiente
+TW,TWN,158,Taiwán,Taiwan,Asia,Asia oriental,Taipei,TWD,New Taiwan Dollar,886,.tw,Estado independiente
+TZ,TZA,834,República Unida de Tanzanía,United Republic of Tanzania,África,África subsahariana,Dodoma,TZS,Tanzanian Shilling,255,.tz,Estado independiente
+UA,UKR,804,Ucrania,Ukraine,Europa,Europa oriental,Kyiv,UAH,Hryvnia,380,.ua,Estado independiente
+UG,UGA,800,Uganda,Uganda,África,África subsahariana,Kampala,UGX,Uganda Shilling,256,.ug,Estado independiente
+UM,UMI,581,Islas menores alejadas de Estados Unidos,United States Minor Outlying Islands,Oceanía,Micronesia,,USD,US Dollar, ,.um,Territories of US
+US,USA,840,Estados Unidos de América,United States of America,América,América del Norte,Washington,USD,US Dollar,1,.us,Estado independiente
+UY,URY,858,Uruguay,Uruguay,América,América Latina y el Caribe,Montevideo,"UYU,UYW","Peso Uruguayo,Unidad Previsional",598,.uy,Estado independiente
+UZ,UZB,860,Uzbekistán,Uzbekistan,Asia,Asia central,Tashkent,UZS,Uzbekistan Sum,998,.uz,Estado independiente
+VA,VAT,336,Santa Sede,Holy See,Europa,Europa meridional,Vatican City,EUR,Euro,39-06,.va,Estado independiente
+VC,VCT,670,San Vicente y las Granadinas,Saint Vincent and the Grenadines,América,América Latina y el Caribe,Kingstown,XCD,East Caribbean Dollar,1-784,.vc,Estado independiente
+VE,VEN,862,Venezuela (República Bolivariana de),Venezuela (Bolivarian Republic of),América,América Latina y el Caribe,Caracas,"VES,VED","Bolívar Soberano,Bolívar Soberano",58,.ve,Estado independiente
+VG,VGB,092,Islas Vírgenes Británicas,British Virgin Islands,América,América Latina y el Caribe,Road Town,USD,US Dollar,1-284,.vg,Territory of GB
+VI,VIR,850,Islas Vírgenes de los Estados Unidos,United States Virgin Islands,América,América Latina y el Caribe,Charlotte Amalie,USD,US Dollar,1-340,.vi,Territory of US
+VN,VNM,704,Viet Nam,Viet Nam,Asia,Asia sudoriental,Hanoi,VND,Dong,84,.vn,Estado independiente
+VU,VUT,548,Vanuatu,Vanuatu,Oceanía,Melanesia,Port Vila,VUV,Vatu,678,.vu,Estado independiente
+WF,WLF,876,Islas Wallis y Futuna,Wallis and Futuna Islands,Oceanía,Polinesia,Mata Utu,XPF,CFP Franc,681,.wf,Territory of FR
+WS,WSM,882,Samoa,Samoa,Oceanía,Polinesia,Apia,WST,Tala,685,.ws,Estado independiente
+YE,YEM,887,Yemen,Yemen,Asia,Asia occidental,Sanaa,YER,Yemeni Rial,967,.ye,Estado independiente
+YT,MYT,175,Mayotte,Mayotte,África,África subsahariana,Mamoudzou,EUR,Euro,262,.yt,Part of FR
+ZA,ZAF,710,Sudáfrica,South Africa,África,África subsahariana,Pretoria,ZAR,Rand,27,.za,Estado independiente
+ZM,ZMB,894,Zambia,Zambia,África,África subsahariana,Lusaka,ZMW,Zambian Kwacha,260,.zm,Estado independiente
+ZW,ZWE,716,Zimbabwe,Zimbabwe,África,África subsahariana,Harare,ZWG,Zimbabwe Gold,263,.zw,Estado independiente

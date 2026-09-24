@@ -1,5 +1,8 @@
 * text=auto eol=lf
 
+# Las fuentes se guardan tal como se descargaron.
+/fuentes/** -text
+
 # Fuera del paquete que descarga Composer: solo desarrollo.
 /.github            export-ignore
 /tests              export-ignore
@@ -10,3 +13,5 @@
 /phpstan.neon.dist  export-ignore
 /phpunit.xml.dist   export-ignore
 /pint.json          export-ignore
+/fuentes            export-ignore
+/scripts            export-ignore

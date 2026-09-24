@@ -9,7 +9,7 @@ RUN    = docker run --rm -i $(TTY) -u $$(id -u):$$(id -g) \
          -v $(CURDIR):/app -v $(CACHE):/tmp/cache -e COMPOSER_CACHE_DIR=/tmp/cache \
          -w /app composer:2
 
-.PHONY: help install update test analyse format lint composer shell
+.PHONY: help install update test analyse format lint catalogos composer shell
 
 help:           ## Lista los comandos
 	@grep -hE '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | awk -F':.*## ' '{printf "  make %-10s %s\n", $$1, $$2}'
@@ -34,6 +34,9 @@ format:         ## Formatea con Pint
 
 lint:           ## Revisa el formato sin cambiar nada (como el CI)
 	$(RUN) vendor/bin/pint --test
+
+catalogos:      ## Regenera resources/catalogos desde fuentes/ (ver FUENTES.md)
+	$(RUN) php scripts/generar.php
 
 composer: | $(CACHE) ## make composer c="require paquete"
 	$(RUN) composer $(c)
