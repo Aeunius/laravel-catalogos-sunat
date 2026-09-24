@@ -31,6 +31,9 @@
         "orchestra/testbench": "^10.0|^11.0",
         "pestphp/pest": "^3.0|^4.0"
     },
+    "suggest": {
+        "aeunius/laravel-peru-rules": "Para validar el número del documento de identidad según su tipo del catálogo 06"
+    },
     "autoload": {
         "psr-4": {
             "Aeunius\\CatalogosSunat\\": "src/"

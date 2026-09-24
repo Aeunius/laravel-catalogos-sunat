@@ -8,6 +8,25 @@ indica a qué versión del Anexo N.° 8 de la SUNAT corresponden sus datos.
 
 ## [Sin publicar]
 
+## [1.0.0] - 2026-09-23
+
+Primera versión estable: desde aquí rige el versionado semántico descrito en el
+README, también para los datos. Datos: los mismos de la 0.2.0.
+
+### Agregado
+
+- `Catalogo::toArray()` y `JsonSerializable`: un catálogo se puede devolver
+  desde un controlador con sus códigos en una lista.
+- `25-jerarquia` aparece en `Catalogos::disponibles()` y está documentado.
+- Sugerencia de `aeunius/laravel-peru-rules` en `composer.json` y sección del
+  README sobre cómo combinarlos.
+
+### Cambiado
+
+- `CodigoCatalogo::donde()` compara los números por su valor: `2.0` coincide
+  con el porcentaje `2`. Entre texto y número sigue siendo estricto.
+- El JSON de `25-jerarquia` se identifica como `"catalogo": "25-jerarquia"`.
+
 ## [0.2.0] - 2026-09-23
 
 Datos: los mismos Excel de la SUNAT del 21-04-2025; ubigeo del INEI (Límites 2015).
@@ -49,6 +68,7 @@ Primera versión. Datos: Excel de reglas de validación CPE y GRE de la SUNAT de
   `TipoAfectacionIgv` (07).
 - `make catalogos`, que regenera los datos desde las fuentes; ver FUENTES.md.
 
-[Sin publicar]: https://github.com/Aeunius/laravel-catalogos-sunat/compare/v0.2.0...HEAD
+[Sin publicar]: https://github.com/Aeunius/laravel-catalogos-sunat/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/Aeunius/laravel-catalogos-sunat/compare/v0.2.0...v1.0.0
 [0.2.0]: https://github.com/Aeunius/laravel-catalogos-sunat/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/Aeunius/laravel-catalogos-sunat/releases/tag/v0.1.0
