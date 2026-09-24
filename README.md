@@ -1,12 +1,86 @@
 # Catálogos de la SUNAT para Laravel
 
-Los catálogos del Anexo N.° 8 de la facturación electrónica de la SUNAT como
+Los catálogos del **Anexo N.° 8** de la facturación electrónica de la SUNAT como
 datos consultables desde PHP: tipos de documento, monedas, unidades de medida,
-tributos, afectación del IGV, ubigeo, UNSPSC y el resto.
+tributos, afectación del IGV, tipos de operación, ubigeo, código de producto
+(UNSPSC), detracciones, medios de pago y el resto.
+
+- Los 42 catálogos vigentes (01–27 y 51–65) y el listado D-37 de la guía de
+  remisión, tomados de las reglas de validación que publica la SUNAT.
+- Las propiedades adicionales de cada catálogo, tipadas: el símbolo de la
+  moneda, el porcentaje de la percepción, los comprobantes que admite cada tipo
+  de operación, el nivel de cada cargo o descuento…
+- Sin conexión ni base de datos: los datos van dentro del paquete y cada
+  catálogo se lee solo cuando se usa.
+- Funciona con Laravel 12 y 13, y también sin Laravel.
 
 > En desarrollo. Todavía no hay versión publicada.
+
+## Uso
+
+```php
+use Aeunius\CatalogosSunat\Facades\Catalogos;
+
+Catalogos::descripcion('01', '01');   // "Factura"
+Catalogos::existe('06', '6');         // true
+Catalogos::existe('51', '0102');      // false: código de 2017, ya no vigente
+
+$pen = Catalogos::buscar('02', 'PEN');
+$pen->descripcion;                    // "sol peruano"
+$pen->get('simbolo');                 // "S/"
+$pen->get('decimales');               // 2
+
+Catalogos::buscar('22', '01')->get('porcentaje');      // 2
+Catalogos::buscar('51', '0112')->get('comprobantes');  // ["factura"]
+```
+
+Un catálogo completo se recorre o se convierte en colección:
+
+```php
+$catalogo = Catalogos::get('53');
+$catalogo->nombre;                    // "Códigos de cargos, descuentos y otras deducciones"
+count($catalogo);                     // 22
+
+$globales = $catalogo->items()
+    ->filter(fn ($item) => $item->get('nivel') === 'global');
+```
+
+El número de catálogo se acepta con o sin cero a la izquierda (`'6'`, `6`,
+`'06'`). Pedir un catálogo que no existe lanza `CatalogoNoExiste`.
+
+Los códigos siempre son texto en `$item->codigo`. Las claves de `items()` no lo
+garantizan, porque PHP convierte en entero una clave como `"62"`.
+
+### Sin Laravel
+
+```php
+use Aeunius\CatalogosSunat\Catalogos;
+
+$catalogos = new Catalogos;
+$catalogos->descripcion('06', '6');   // "Registro Unico de Contribuyentes"
+```
+
+## De dónde salen los datos
+
+De los Excel de reglas de validación que la SUNAT publica en su portal CPE, que
+traen el Anexo N.° 8 vigente, y de los estándares a los que el anexo remite (ISO
+4217, UN/ECE Rec. 20, ISO 3166-1, ubigeo del INEI, UNSPSC). El detalle, con
+versiones y fechas, está en [FUENTES.md](FUENTES.md).
+
+## Desarrollo
+
+Todo corre en Docker; no hace falta PHP en el equipo.
+
+```bash
+make install     # dependencias
+make test        # Pest
+make analyse     # PHPStan
+make lint        # Pint, sin cambiar nada
+make catalogos   # regenera resources/catalogos desde fuentes/
+```
 
 ## Licencia
 
 El código es MIT; ver [LICENSE.md](LICENSE.md). Los catálogos son información
-pública de la SUNAT.
+pública de la SUNAT y de los organismos de estandarización citados en
+[FUENTES.md](FUENTES.md).
